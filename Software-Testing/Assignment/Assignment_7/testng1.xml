@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Group Suite">
+
+    <!-- Run only Smoke group -->
+    <test name="SmokeTests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.testng.GroupingDemoTest"/>
+        </classes>
+    </test>
+
+    <!-- Run only Regression group -->
+    <test name="RegressionTests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.testng.GroupingDemoTest"/>
+        </classes>
+    </test>
+
+    <!-- Run Sanity group -->
+    <test name="SanityTests">
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.testng.GroupingDemoTest"/>
+        </classes>
+    </test>
+
+</suite>
