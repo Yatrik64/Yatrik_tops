@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DDF Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="baseUrl" value="https://demo.automationtesting.in/SignIn.html"/>
+  <test thread-count="5" name="SignIn DDT(failed)">
+    <classes>
+      <class name="com.demo.tests.SignInDDTTest">
+        <methods>
+          <include name="signIn_withExcelData"/>
+          <include name="setupClass"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demo.tests.SignInDDTTest -->
+    </classes>
+  </test> <!-- SignIn DDT(failed) -->
+</suite> <!-- Failed suite [DDF Suite] -->

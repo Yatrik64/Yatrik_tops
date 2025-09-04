@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Hybrid Login Suite">
+  <test name="Hybrid Login Test">
+    <classes>
+      <class name="com.yatrik.hybrid.tests.HybridLoginTest"/>
+    </classes>
+  </test>
+</suite>
+	
